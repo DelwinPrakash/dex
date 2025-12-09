@@ -3,6 +3,7 @@ import './globals.css'
 import { AppProviders } from '@/components/app-providers'
 import { AppLayout } from '@/components/app-layout'
 import React from 'react'
+import LightPillar from '@/components/LightPillar'
 
 export const metadata: Metadata = {
   title: 'App',
@@ -19,6 +20,21 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`antialiased`}>
+        <div className="fixed inset-0 z-0">
+          <LightPillar
+            topColor="#5227FF"
+            bottomColor="#FF9FFC"
+            intensity={1.0}
+            rotationSpeed={0.3}
+            glowAmount={0.005}
+            pillarWidth={3.0}
+            pillarHeight={0.4}
+            noiseIntensity={0.5}
+            pillarRotation={0}
+            interactive={false}
+            mixBlendMode="normal"
+          />
+        </div>
         <AppProviders>
           <AppLayout links={links}>{children}</AppLayout>
         </AppProviders>
