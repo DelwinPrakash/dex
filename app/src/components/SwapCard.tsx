@@ -112,7 +112,7 @@ export const SwapCard = () => {
     };
 
     return (
-        <div className="w-full max-w-md mx-auto bg-card border border-border rounded-2xl p-6 shadow-xl">
+        <div className="w-full max-w-md mx-auto bg-card border border-border rounded-2xl p-6 shadow-xl relative z-10">
             <div className="flex justify-center items-center mb-6">
                 <h2 className="text-xl font-semibold">Swap</h2>
                 {/* <button className="p-2 hover:bg-muted rounded-lg transition-colors text-muted-foreground hover:text-foreground">

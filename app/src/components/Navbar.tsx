@@ -10,7 +10,7 @@ const WalletMultiButton = dynamic(
 
 export const Navbar = () => {
     return (
-        <nav className="flex items-center justify-between p-4 bg-background/60 backdrop-blur-xl sticky top-0 z-50 shadow-sm">
+        <nav className="flex items-center justify-between p-4 sticky top-0">
             <div className="container mx-auto flex justify-between items-center">
                 <Link href="/" className="flex items-center gap-2 group">
                     <div className="bg-gradient-to-br from-purple-600 to-cyan-600 p-2 rounded-xl group-hover:scale-105 transition-transform">
